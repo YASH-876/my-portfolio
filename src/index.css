@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root,
+:root[data-theme='light'] {
+  --bg: #fdf4ea;
+  --card: #fffaf3;
+  --card-2: #fff6ec;
+  --border: #eddfce;
+  --text: #2a2f45;
+  --muted: #7d8194;
+  --accent: #b886e0;
+  --pink: #f57fc6;
+  --btn-bg: #2c3547;
+  --btn-text: #ffffff;
+  --shadow: 0 2px 0 rgba(120, 90, 60, 0.05), 0 8px 24px rgba(150, 110, 70, 0.07);
+
+  --lavender-bg: #ece6fb; --lavender-fg: #6a52c9; --lavender-bd: #d9cff5;
+  --blue-bg: #e3ecff;     --blue-fg: #3e63c8;     --blue-bd: #c9d9fa;
+  --green-bg: #dff5e4;    --green-fg: #2f8a4c;    --green-bd: #bfe8c9;
+  --pink-bg: #ffe3ee;     --pink-fg: #d2457e;     --pink-bd: #ffc8dc;
+  --rose-bg: #ffe3ef;     --rose-fg: #c42a78;     --rose-bd: #ffc0da;
+  --yellow-bg: #fff0cc;   --yellow-fg: #b27700;   --yellow-bd: #ffe099;
+  --sky-bg: #e0f0ff;      --sky-fg: #2f78bd;      --sky-bd: #bfdcf7;
+  --teal-bg: #def5f0;     --teal-fg: #1f9b83;     --teal-bd: #bde9df;
+  --chef-bg: #fff0d6;     --chef-fg: #b06a2a;     --chef-bd: #ffdcaa;
+}
+
+:root[data-theme='dark'] {
+  --bg: #12142a;
+  --card: #181b34;
+  --card-2: #1b1e3a;
+  --border: #2b2f55;
+  --text: #f2f3fb;
+  --muted: #9ba1c0;
+  --accent: #e18cf5;
+  --pink: #ff9bdc;
+  --btn-bg: #f7a9ff;
+  --btn-text: #1b1233;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  --lavender-bg: #272550; --lavender-fg: #b9a6ff; --lavender-bd: #3d3a7a;
+  --blue-bg: #1c2a55;     --blue-fg: #7fb0ff;     --blue-bd: #2c447f;
+  --green-bg: #17312c;    --green-fg: #6fe0a0;    --green-bd: #25574a;
+  --pink-bg: #36203f;     --pink-fg: #ff8fc8;     --pink-bd: #5a3366;
+  --rose-bg: #3a1f44;     --rose-fg: #ff8fd6;     --rose-bd: #66356f;
+  --yellow-bg: #3a3016;   --yellow-fg: #ffc94d;   --yellow-bd: #62501f;
+  --sky-bg: #16304d;      --sky-fg: #78c2ff;      --sky-bd: #264f7a;
+  --teal-bg: #153b3a;     --teal-fg: #56e0c4;     --teal-bd: #22615a;
+  --chef-bg: #3a2c1e;     --chef-fg: #ffb877;     --chef-bd: #6a4a2c;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; cursor: pointer; }
+img { display: block; max-width: 100%; }
+
+.tone-lavender { background: var(--lavender-bg); color: var(--lavender-fg); border-color: var(--lavender-bd); }
+.tone-blue     { background: var(--blue-bg);     color: var(--blue-fg);     border-color: var(--blue-bd); }
+.tone-green    { background: var(--green-bg);    color: var(--green-fg);    border-color: var(--green-bd); }
+.tone-pink     { background: var(--pink-bg);     color: var(--pink-fg);     border-color: var(--pink-bd); }
+.tone-rose     { background: var(--rose-bg);     color: var(--rose-fg);     border-color: var(--rose-bd); }
+.tone-yellow   { background: var(--yellow-bg);   color: var(--yellow-fg);   border-color: var(--yellow-bd); }
+.tone-sky      { background: var(--sky-bg);      color: var(--sky-fg);      border-color: var(--sky-bd); }
+.tone-teal     { background: var(--teal-bg);     color: var(--teal-fg);     border-color: var(--teal-bd); }
+.tone-chef     { background: var(--chef-bg);     color: var(--chef-fg);     border-color: var(--chef-bd); }
